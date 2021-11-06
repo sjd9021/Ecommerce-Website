@@ -1,0 +1,16 @@
+.table{
+  width: 100%;
+  border-collapse: collapse;  
+}
+.table tbody tr:nth-of-type(odd) {
+    background-color: beige;
+}
+
+.table td,
+
+.table th {
+    text-align: left;
+    border: 0.3rem solid beige;
+    padding: 0.5rem;
+
+}

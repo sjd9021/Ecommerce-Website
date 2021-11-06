@@ -3,7 +3,7 @@
 import React from "react";
 import "./header.css";
 import SearchIcon from "@mui/icons-material/Search";
-import image from "./photos/logo-ashoka.png";
+import image from "./photos/Artkart-logo.png";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
@@ -23,18 +23,20 @@ function Header() {
       <div className="header_nav">
         <Link to="/login">
           <div className="header_option">
-            <span className="header_optionone">Hello Guest</span>
+            <span className="header_optionone">Hello Guest,</span>
             <span className="header_optiontwo">Sign In</span>
           </div>
         </Link>
+        <Link to="/orderhistory">
         <div className="header_option">
-          <span className="header_optionone">Return </span>
-          <span className="header_optiontwo">& Orders</span>
+          <span className="header_optionone">Past</span>
+          <span className="header_optiontwo">Orders</span>
         </div>
-        <div className="header_option">
+        </Link>
+        {/* <div className="header_option">
           <span className="header_optionone">Your</span>
           <span className="header_optiontwo">shutup</span>
-        </div>
+        </div> */}
 
         <Link to="/checkout">
           <div className="header_optionbasket">
