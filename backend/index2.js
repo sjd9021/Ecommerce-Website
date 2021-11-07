@@ -9,8 +9,11 @@ mongoose.connect(
   "mongodb+srv://samvit:samvit9021@cluster0.fcvhj.mongodb.net/Cluster0?retryWrites=true&w=majority"
 );
 app.use(express.json());
-
+app.use(
+  cors({
+    origin: "http://localhost:3000", // location of react frontend
+    credentials: true,
+  })
+);
 app.use("/app", userrouter);
-app.use(express.static(path.join(__dirname, "public")));
-
 app.listen(4000, () => console.log("server is rinning"));

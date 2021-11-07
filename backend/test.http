@@ -2,7 +2,7 @@ POST http://127.0.0.1:4000/app/signup
 Content-Type: application/json
 
 {
-    "username":"sam",
+    "username":"this is a test post",
     "email":"sam@mail.com",
     "password":"sjd",
     "mobile":"905150"
