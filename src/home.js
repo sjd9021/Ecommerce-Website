@@ -1,3 +1,4 @@
+// data is currently hard-coded in, will need to create a separate data file/database
 import React from "react";
 import "./home.css";
 import image from "./photos/Union-Street-banners.jpeg";
