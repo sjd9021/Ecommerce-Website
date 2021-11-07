@@ -5,3 +5,5 @@
 // }
 
 // module.exports = connecttodb;
+
+// code shifted to index2.js
