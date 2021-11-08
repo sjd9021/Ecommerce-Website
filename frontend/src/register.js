@@ -1,5 +1,3 @@
-// needs back-end work to be functional
-
 import React, { Component } from "react";
 import "./register.css";
 import { useEffect, useState } from "react";
@@ -17,8 +15,6 @@ function Register() {
   const [password, setPassword] = useState("");
 
   const register = () => {
-    axios.defaults.headers.post["Content-Type"] =
-      "application/x-www-form-urlencoded";
     axios({
       method: "POST",
       data: {
@@ -28,7 +24,6 @@ function Register() {
         address: address,
         password: password,
       },
-      withCredentials: true,
       url: "http://127.0.0.1:4000/app/signup",
     }).then(
       (response) => {
