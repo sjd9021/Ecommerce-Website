@@ -52,7 +52,7 @@ function Register() {
           <h5>Your Mobile Number</h5>
           <input type="text" onChange={(e) => setPhone(e.target.value)} />
 
-          <h5>Your Address</h5>
+          <h5>Your Addresss</h5>
           <input type="text" onChange={(e) => setAddress(e.target.value)} />
 
           <h5>Create Password</h5>
