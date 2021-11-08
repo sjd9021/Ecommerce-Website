@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import image from "./photos/Artkart-logo.png";
 import axios from "axios";
+import ky from 'ky';
 
 class Register extends Component {
   constructor() {
@@ -22,7 +23,7 @@ class Register extends Component {
     this.changemobile = this.changemobile.bind(this);
     this.changeaddress = this.changeaddress.bind(this);
     this.changepassword = this.changepassword.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
+    this.send = this.send.bind(this);
   }
   // const register = (e) => {
   //   e.preventDefault();
@@ -55,10 +56,10 @@ class Register extends Component {
     });
   }
 
-  onSubmit(event) {
-    event.preventDefualt();
+  send(event) {
+    event.preventDefault();
 
-    const registered = {
+    const registeredForm = {
       username: this.state.username,
       email: this.state.email,
       mobile: this.state.mobile,
@@ -66,11 +67,18 @@ class Register extends Component {
       password: this.state.password,
     };
     console.log("working");
-    axios
-      .post("http://127.0.0.1:4000/app/signup", registered)
-      .then((response) => console.log(response.data));
-
-    window.location = "/";
+    //    axios.post("http://localhost:4000/app/signup", registeredForm)
+    //    .then((response) => console.log(response.data))
+    //    .catch((error) => {
+    //     console.log(error)
+    // });
+    // axios({
+    //   method: 'post',
+    //   url: 'http://localhost:4000/app/signup',
+    //   data: 'registered'
+    // });
+    ky.post('http://localhost:4000/app/signup', registeredForm)
+  window.location = "/";
   }
 
   render = () => {
@@ -82,49 +90,48 @@ class Register extends Component {
 
         <div className="register_container">
           <h1>Create New Account</h1>
-          <form onSubmit={this.onSubmit}>
+          <form onSubmit={this.send}>
             <h5>Your Name</h5>
             <input
               type="text"
               onChange={this.changeusername}
-              value={this.state.username}
+              defaultValue={this.state.username}
             />
             <h5>Your E-mail</h5>
             <input
               type="text"
               onChange={this.changeemail}
-              value={this.state.email}
+              defaultValue={this.state.email}
             />
 
             <h5>Your Mobile Number</h5>
             <input
               type="text"
               onChange={this.changemobile}
-              value={this.state.mobile}
+              defaultValue={this.state.mobile}
             />
 
             <h5>Your Address</h5>
             <input
               type="text"
               onChange={this.changeaddress}
-              value={this.state.address}
+              defaultValue={this.state.address}
             />
 
             <h5>Create Password</h5>
             <input
               type="password"
               onChange={this.changepassword}
-              value={this.state.password}
+              defaultValue={this.state.password}
             />
 
-            <button
-              type="submit"
-              value="Submit"
+            <input
+              type="Submit"
+              defaultValue="Submit"
               // onClick={register}
               className="createaccount_button"
-            >
-              <strong>Create Account</strong>
-            </button>
+            />
+          
           </form>
         </div>
       </div>

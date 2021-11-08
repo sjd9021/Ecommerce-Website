@@ -6,8 +6,9 @@ router.post("/signup", (request, response) => {
   const user = new usercopy({
     username: request.body.username,
     email: request.body.email,
-    password: request.body.password,
     mobile: request.body.mobile,
+    address: request.body.address,
+    password: request.body.password,    
   });
   user
     .save()
