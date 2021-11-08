@@ -6,6 +6,7 @@ import image from "./photos/Artkart-logo.png";
 import axios from "axios";
 import { keyword } from "color-convert";
 import ky from "ky";
+import GoogleButton from "react-google-button";
 
 function Register() {
   const [name, setName] = useState("");
@@ -33,6 +34,7 @@ function Register() {
         console.log(error);
       }
     );
+    window.location = "/";
   };
   return (
     <div className="register">
