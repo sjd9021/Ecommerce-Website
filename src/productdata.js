@@ -46,6 +46,7 @@ export default {
     products: [{
             _id: "1",
             name: "BLACK HORSES",
+            category: ["modern"],
             image: "./photos/1.png",
             price: 22.49,
             rating: 4.5,
@@ -54,6 +55,7 @@ export default {
         },{
             _id: "2",
             name: "FALL AT SOBA COMMONE",
+            category: ["contemporary"],
             image: "./photos/2.png",
             price: 24.99,
             rating: 4.3,
@@ -62,6 +64,7 @@ export default {
         },{
             _id: "3",
             name: "BLONDE BRUSH",
+            category: ["abstract"],
             image: "./photos/3.png",
             price: 12.99,
             rating: 3.8,
@@ -70,6 +73,7 @@ export default {
         },{
             _id: "4",
             name: "WATER LILY POND",
+            category: ["modern"],
             image: "./photos/4.png",
             price: 30.49,
             rating: 4.7,
@@ -78,6 +82,7 @@ export default {
         },{
             _id: "5",
             name: "PASTORAL LANDSCAPE",
+            category: ["modern"],
             image: "./photos/5.png",
             price: 22.99,
             rating: 3.6,
@@ -86,6 +91,7 @@ export default {
         },{
             _id: "6",
             name: "AFRICAN KRAAL",
+            category: ["abstract"],
             image: "./photos/6.png",
             price: 27.99,
             rating: 4.2,
@@ -94,6 +100,7 @@ export default {
         },{
             _id: "7",
             name: "THE DRUM",
+            category: ["contemporary"],
             image: "./photos/7.png",
             price: 32.99,
             rating: 4.5,
@@ -102,6 +109,7 @@ export default {
         },{
             _id: "8",
             name: "ADVICE I",
+            category: ["modern"],
             image: "./photos/8.png",
             price: 34.99,
             rating: 4.8,
@@ -110,6 +118,7 @@ export default {
         },{
             _id: "9",
             name: "ADVICE II",
+            category: ["contemporary"],
             image: "./photos/9.png",
             price: 38.99,
             rating: 4.6,
@@ -118,6 +127,7 @@ export default {
         },{
             _id: "10",
             name: "EXOTIC GARDEN",
+            category: ["contemporary"],
             image: "./photos/10.png",
             price: 29.99,
             rating: 4.2,
@@ -126,6 +136,7 @@ export default {
         },{
             _id: "11",
             name: "MOJAVE ROAD CROP",
+            category: ["modern"],
             image: "./photos/11.png",
             price: 23.49,
             rating: 4.8,
@@ -134,6 +145,7 @@ export default {
         },{
             _id: "12",
             name: "GAME OVER",
+            category: ["contemporary"],
             image: "./photos/12.png",
             price: 49.99,
             rating: 4.3,
@@ -142,6 +154,7 @@ export default {
         },{
             _id: "13",
             name: "BROKEN DREAMS",
+            category: ["modern"],
             image: "./photos/13.png",
             price: 17.99,
             rating: 3.9,
@@ -150,6 +163,7 @@ export default {
         },{
             _id: "14",
             name: "BURNT ORANGE",
+            category: ["abstract"],
             image: "./photos/14.png",
             price: 28.49,
             rating: 4.4,
@@ -158,6 +172,7 @@ export default {
         },{
             _id: "15",
             name: "COLORFUL FLOWERS",
+            category: ["modern"],
             image: "./photos/15.png",
             price: 16.99,
             rating: 3.9,
@@ -166,6 +181,7 @@ export default {
         },{
             _id: "16",
             name: "MARBLE",
+            category: ["contemporary"],
             image: "./photos/16.png",
             price: 35.99,
             rating: 4.4,
@@ -174,6 +190,7 @@ export default {
         },{
             _id: "17",
             name: "LEGENDS",
+            category: ["modern"],
             image: "./photos/17.png",
             price: 35.99,
             rating: 4.4,
@@ -182,6 +199,7 @@ export default {
         },{
             _id: "18",
             name: "TRIBECA",
+            category: ["contemporary"],
             image: "./photos/18.png",
             price: 18.49,
             rating: 4.8,
@@ -190,6 +208,7 @@ export default {
         },{
             _id: "19",
             name: "ABSTRACT DAY",
+            category: ["abstract"],
             image: "./photos/19.png",
             price: 49.99,
             rating: 3.3,
@@ -198,6 +217,7 @@ export default {
         },{
             _id: "20",
             name: "HAPPY LANDING",
+            category: ["modern"],
             image: "./photos/20.png",
             price: 120.99,
             rating: 4.7,
@@ -206,6 +226,7 @@ export default {
         },{
             _id: "21",
             name: "SILENT GLOW",
+            category: ["modern"],
             image: "./photos/21.png",
             price: 14.99,
             rating: 4.9,
@@ -214,6 +235,7 @@ export default {
         },{
             _id: "22",
             name: "SPLENDID GLOW",
+            category: ["contemporary"],
             image: "./photos/22.png",
             price: 14.99,
             rating: 4.4,
@@ -222,6 +244,7 @@ export default {
         },{
             _id: "23",
             name: "DIZZY AT THE EDGE",
+            category: ["modern"],
             image: "./photos/23.png",
             price: 27.99,
             rating: 4.8,
@@ -230,6 +253,7 @@ export default {
         },{
             _id: "24",
             name: "RED POPPY FOREST",
+            category: ["contemporary"],
             image: "./photos/24.png",
             price: 54.49,
             rating: 4.6,
@@ -238,6 +262,7 @@ export default {
         },{
             _id: "25",
             name: "RAINFALL",
+            category: ["modern"],
             image: "./photos/25.png",            
             price: 28.99,
             rating: 4.4,
@@ -246,6 +271,7 @@ export default {
         },{
             _id: "26",
             name: "SUNRISE BY THE SEA",
+            category: ["contemporary"],
             image: "./photos/26.png",            
             price: 23.49,
             rating: 3.9,
@@ -254,6 +280,7 @@ export default {
         },{
             _id: "27",
             name: "WINDTHREAD",
+            category: ["contemporary"],
             image: "./photos/27.png",            
             price: 32.49,
             rating: 4.4,
@@ -262,6 +289,7 @@ export default {
         },{
             _id: "28",
             name: "WHITE TULIPS",
+            category: ["modern"],
             image: "./photos/28.png",            
             price: 26.99,
             rating: 4.1,
@@ -270,6 +298,7 @@ export default {
         },{
             _id: "29",
             name: "COLORS OF IRIS",
+            category: ["abstract"],
             image: "./photos/29.png",            
             price: 58.49,
             rating: 4.5,
@@ -278,6 +307,7 @@ export default {
         },{
             _id: "30",
             name: "COLORS IN SPACE",
+            category: ["modern"],
             image: "./photos/30.png",            
             price: 72.99,
             rating: 4.2,
@@ -286,6 +316,7 @@ export default {
         },{
             _id: "31",
             name: "SENZA TITOLO",
+            category: ["abstract"],
             image: "./photos/31.png",            
             price: 89.99,
             rating: 4.6,
@@ -294,6 +325,7 @@ export default {
         },{
             _id: "32",
             name: "ESTATE",
+            category: ["contemporary"],
             image: "./photos/32.png",            
             price: 39.49,
             rating: 3.5,
@@ -302,6 +334,7 @@ export default {
         },{
             _id: "33",
             name: "NUOVI INCONTRI",
+            category: ["modern"],
             image: "./photos/33.png",            
             price: 19.49,
             rating: 4.7,
@@ -310,6 +343,7 @@ export default {
         },{
             _id: "34",
             name: "PRINTEMPS",
+            category: ["contemporary"],
             image: "./photos/34.png",            
             price: 69.99,
             rating: 4.2,
@@ -318,6 +352,7 @@ export default {
         },{
             _id: "35",
             name: "EQUILIBRI IN ROSSO",
+            category: ["modern"],
             image: "./photos/35.png",            
             price: 12.99,
             rating: 3.2,
@@ -326,6 +361,7 @@ export default {
         },{
             _id: "36",
             name: "RUSHES",
+            category: ["abstract"],
             image: "./photos/36.png",            
             price: 55.49,
             rating: 4.1,
@@ -334,6 +370,7 @@ export default {
         },{
             _id: "37",
             name: "AUTUMN BOTANICALS",
+            category: ["modern"],
             image: "./photos/37.png",            
             price: 64.99,
             rating: 4.3,
@@ -342,6 +379,7 @@ export default {
         },{
             _id: "38",
             name: "LAVENDER FUSION",
+            category: ["contemporary"],
             image: "./photos/38.png",            
             price: 29.99,
             rating: 3.7,
@@ -350,6 +388,7 @@ export default {
         },{
             _id: "39",
             name: "AQUA FUSION",
+            category: ["modern"],
             image: "./photos/39.png",            
             price: 42.99,
             rating: 4.0,
@@ -358,7 +397,8 @@ export default {
         },{
             _id: "40",
             name: "SILVER VISION",
-            image: "./photos/40.png",            
+            category: ["modern"],
+            image: "./photos/40.png",          
             price: 24.49,
             rating: 4.3,
             reviews: [],
