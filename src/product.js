@@ -6,9 +6,8 @@ import { useStateValue } from "./StateProvider";
 function Product({ id, title, price, image, rating }) {
   const [{ basket }, dispatch] = useStateValue();
 
-  console.log("this is in the basker", basket);
+  console.log("this is in the basket", basket);
   const addtobasket = () => {
-    //dispatch items to the datalayer
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
@@ -23,8 +22,8 @@ function Product({ id, title, price, image, rating }) {
   return (
     <div className="product">
       <div className="product_info">
-        <p>{title}</p>
-        <p className="proct_price">
+        <p className="product_title">{title}</p>
+        <p className="product_price">
           <small>$</small>
           <strong>{price}</strong>
         </p>
@@ -32,14 +31,13 @@ function Product({ id, title, price, image, rating }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>⭐</p>
+              <p key={i}>⭐</p>
             ))}
         </div>
       </div>
-      <img src={image} />
-
-      <button className="button" onClick={addtobasket}>
-        <strong>ADD TO BASKET</strong>
+      <img src={image} alt={title} />
+      <button className="product_button" onClick={addtobasket}>
+        <span>Add to Basket</span>
         <ShoppingCartIcon className="button_cart" />
       </button>
     </div>
